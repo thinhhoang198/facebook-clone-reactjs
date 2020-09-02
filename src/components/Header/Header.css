@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  background-color: white;
+  top: 0;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  z-index: 100;
+  width: 100%;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 0.2;
+}
+
+.header__leftIcon {
+  object-fit: contain;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header__searchBar {
+  display: flex;
+  background-color: #eff2f5;
+  border-radius: 999px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.header__searchBar > input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.header__center {
+  display: flex;
+  flex: 0.5;
+  justify-content: center;
+}
+
+.header__option > .MuiSvgIcon-root {
+  color: gray;
+  padding: 20px 40px;
+}
+
+.header__option:hover > .MuiSvgIcon-root {
+  color: #2e81f4;
+  background-color: #eff2f5;
+  border-radius: 20px;
+}
+
+.header__option {
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+.header__option--active {
+  color: #2e81f4;
+  border-bottom: 4px solid #2e81f4;
+}
+
+.header__right {
+  display: flex;
+  margin-right: 30px;
+  flex: 0.3;
+  justify-content: flex-end;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info > h4 {
+  margin-left: 10px;
+}
